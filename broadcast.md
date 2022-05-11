@@ -84,3 +84,81 @@ function formatCurrency(number) {
   });
 }
 ```
+
+
+```
+var ACCESS_TOKEN = "";
+
+function broadcast() {
+  UrlFetchApp.fetch('https://api.line.me/v2/bot/message/broadcast', {
+    method: 'post',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + ACCESS_TOKEN,
+    },
+    payload: JSON.stringify({
+      messages: [
+
+        {
+          "type": "flex",
+          "altText": "ประกาศ",
+          "contents": {
+            "type": "carousel",
+            "contents": [
+
+
+              //ใส่ JSON ข้อความที่ออกแบบ
+
+              {
+                "type": "bubble",
+                "direction": "ltr",
+                "header": {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Header",
+                      "align": "center",
+                      "contents": []
+                    }
+                  ]
+                },
+                "body": {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Body",
+                      "align": "center",
+                      "contents": []
+                    }
+                  ]
+                },
+                "footer": {
+                  "type": "box",
+                  "layout": "horizontal",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "Button",
+                        "uri": "https://linecorp.com"
+                      }
+                    }
+                  ]
+                }
+              }
+
+              //วางถึงตรงนี้   
+            ]
+          }
+        }
+
+      ]
+    }),
+  });
+}
+```
