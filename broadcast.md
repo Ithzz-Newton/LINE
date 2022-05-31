@@ -40,21 +40,67 @@ payload: JSON.stringify({
 5.ข้อมูล
 
 ```
-{
-          "type": "flex",
-          "altText": "ประกาศ",
-          "contents": {
-            "type": "carousel",
+var message = [
+  {
+    "type": "flex",
+    "altText": "ประกาศ",
+    "contents": {
+      "type": "carousel",
+      "contents": [
+
+
+        //ใส่ JSON ข้อความที่ออกแบบ
+        {
+          "type": "bubble",
+          "direction": "ltr",
+          "header": {
+            "type": "box",
+            "layout": "vertical",
             "contents": [
-
-
-              //ใส่ JSON ข้อความที่ออกแบบ
-        
-
-              //วางถึงตรงนี้   
+              {
+                "type": "text",
+                "text": "Header",
+                "align": "center",
+                "contents": []
+              }
+            ]
+          },
+          "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Body",
+                "align": "center",
+                "contents": []
+              }
+            ]
+          },
+          "footer": {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "Button",
+                  "uri": "https://linecorp.com"
+                }
+              }
             ]
           }
         }
+
+
+        //วางถึงตรงนี้   
+      ]
+    }
+  }
+
+]
+
 ```
 
 6.ใช้ API ดึงยอดผู้ติดเชื้อ
