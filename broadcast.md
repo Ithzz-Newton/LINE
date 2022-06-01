@@ -51,47 +51,23 @@ var message = [
 
         //ใส่ JSON ข้อความที่ออกแบบ
         {
-          "type": "bubble",
-          "direction": "ltr",
-          "header": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "Header",
-                "align": "center",
-                "contents": []
-              }
-            ]
-          },
-          "body": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "Body",
-                "align": "center",
-                "contents": []
-              }
-            ]
-          },
-          "footer": {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "button",
-                "action": {
-                  "type": "uri",
-                  "label": "Button",
-                  "uri": "https://linecorp.com"
-                }
-              }
-            ]
-          }
-        }
+  "type": "bubble",
+  "direction": "ltr",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Body",
+        "size": "4xl",
+        "align": "center",
+        "contents": []
+      }
+    ]
+  }
+}
+
 
 
         //วางถึงตรงนี้   
