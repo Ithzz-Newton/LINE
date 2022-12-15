@@ -10,6 +10,14 @@ https://www.postman.com/
 ```
 https://api.line.me/v2/bot/richmenu
 ```
+> กำหนด action สลับ เมนู
+```
+"action": {
+        "type": "richmenuswitch",
+        "richMenuAliasId": "al-menu1",
+        "data": "richmenu=al-menu1"
+      }
+```
 
 ### STEP3
 กำหนดรูป Rich Menu ด้วย API
