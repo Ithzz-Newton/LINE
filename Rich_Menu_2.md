@@ -27,3 +27,10 @@ https://api.line.me/v2/bot/user/all/richmenu
 ```
 https://api.line.me/v2/bot/richmenu/{{richMenuId}}
 ```
+
+### Delete Rich Menu Alias
+> โดยการส่ง DELETE Request ไปที่
+```
+https://api.line.me/v2/bot/richmenu/alias/{richMenuAliasId}
+```
+
