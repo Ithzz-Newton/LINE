@@ -92,8 +92,6 @@ var options = {
   },
   "payload": JSON.stringify({
 
-    //ใส่ user id ที่คัดลอกมา
-
     "to": [userId],
 
     "messages": [
