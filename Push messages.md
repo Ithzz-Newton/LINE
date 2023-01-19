@@ -52,7 +52,7 @@ function doPost(e) {
         "payload": {
           "line": {
             "type": "text",
-            "text": "🫥" + AI(userText)
+            "text": "🫥" userText
           }
         }
       }
